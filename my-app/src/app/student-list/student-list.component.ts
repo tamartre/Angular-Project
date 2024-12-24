@@ -14,6 +14,10 @@ export class StudentListComponent {
     {id:3,firstName:"Noa",lastName:"Levi",address:"",phone:"12 Sderot",isActive:true,marksAverage:92}
   ]
 
+  DeleteStudent(id: number) {
+    this.students = this.students.filter(s => s.id !== id);
+  }
+
   constructor(){
 
   }
