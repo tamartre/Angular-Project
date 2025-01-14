@@ -1,18 +1,26 @@
 <div class="container">
 
     <p>student-list works!</p>
+   
+ <ul class="list-group">
+   
 
-<ul class="list-group">
+    <!-- <button (click)="ShowNewDetail()" class="col-3">Add New Student</button> -->
     <li class="list-group-item" *ngFor="let student of students">
-            Id: {{student.id}}
-            FirstName: {{student.firstName}}
-            LastName: {{student.lastName}}
-            Address: {{student.address}}
-            Phone: {{student.phone}}
-            IsActive: {{student.isActive}}
-            MarksAverage: {{student.marksAverage}}
-            <div><button (click)="DeleteStudent(student)">Delete Student</button></div>
-
+    <div class="row">
+        <div class="col-1">{{student.id}}</div>
+        <div class="col-1">{{student.firstName}}</div>
+        <div class="col-1">{{student.lastName}}</div>
+        <div class="col-1">{{student.address}}</div>
+        <div class="col-1">{{student.phone}}</div>
+        <div class="col-1">{{student.isActive}}</div>
+        <div class="col-1">{{student.marksAverage}}</div>
+        <button (click)="ShowDetails(student)" class="col-2">Details</button>
+        <button (click)="DeleteStudent(student)" class="col-2">Delete</button>
+      </div>
     </li>
-</ul>
-</div>
+</ul> 
+<app-student-details  [student]="selectedStudent" ></app-student-details>
+<button (click)="ShowNewDetails()" class="col-3">Add student</button> 
+ </div> 
+

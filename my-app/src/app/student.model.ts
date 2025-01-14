@@ -7,5 +7,6 @@ export class Student{
     phone:any;
     isActive:any;
     marksAverage:any;
+    leaveDate?: any;
 
 }
