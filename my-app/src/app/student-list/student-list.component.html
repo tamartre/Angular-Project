@@ -1,7 +1,9 @@
-<p>student-list works!</p>
+<div class="container">
 
-<ul>
-    <li *ngFor="let student of students">
+    <p>student-list works!</p>
+
+<ul class="list-group">
+    <li class="list-group-item" *ngFor="let student of students">
             Id: {{student.id}}
             FirstName: {{student.firstName}}
             LastName: {{student.lastName}}
@@ -9,7 +11,8 @@
             Phone: {{student.phone}}
             IsActive: {{student.isActive}}
             MarksAverage: {{student.marksAverage}}
-            <button (click)="DeleteStudent(student.id)">Delete Student</button>
+            <div><button (click)="DeleteStudent(student)">Delete Student</button></div>
 
     </li>
 </ul>
+</div>

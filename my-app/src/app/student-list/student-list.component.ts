@@ -14,8 +14,9 @@ export class StudentListComponent {
     {id:3,firstName:"Noa",lastName:"Levi",address:"12 Sderot",phone:527173297,isActive:true,marksAverage:92}
   ]
 
-  DeleteStudent(id: number) {
-    this.students = this.students.filter(s => s.id !== id);
+  DeleteStudent(student: Student){
+    let indexToDelete = this.students.indexOf(student);
+    this.students.splice(indexToDelete, 1);
   }
 
   constructor(){
