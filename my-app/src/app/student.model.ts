@@ -9,4 +9,13 @@ export class Student{
     marksAverage:any;
     leaveDate?: any;
 
+    constructor(firstName:"",lastName:"",address:"",phone:"",isActive:false,marksAverage:0){
+        this.firstName=firstName;
+        this.lastName=lastName;
+        this.address=address;
+        this.phone=phone;
+        this.isActive=isActive;
+        this.marksAverage=marksAverage;
+    }
+
 }

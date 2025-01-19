@@ -20,7 +20,7 @@
       </div>
     </li>
 </ul> 
-<app-student-details  [student]="selectedStudent" ></app-student-details>
+<app-student-details  [student]="selectedStudent" (onSaveNewStudent)="addNewStudent($event)"></app-student-details>
 <button class="btn btn-primary" (click)="ShowNewDetails()" >Add student</button> 
  </div> 
 
