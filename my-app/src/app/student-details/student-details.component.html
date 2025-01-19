@@ -1,4 +1,4 @@
-<div class="card" *ngIf="student else noStudent">
+<div class="card" *ngIf="student">
     <div class="card-body">
         <form [formGroup]="studentForm">
             <div class="form-group">
@@ -48,8 +48,3 @@
     </div>
 </div>
 
-<ng-template #noStudent>
-    <div class="card">
-        No Student To Display
-    </div>
-</ng-template>
