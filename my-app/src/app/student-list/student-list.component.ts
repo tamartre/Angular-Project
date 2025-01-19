@@ -19,7 +19,7 @@ export class StudentListComponent {
     this.students.splice(indexToDelete, 1);
   }
 
-  selectedStudent: Student | null = null;
+ selectedStudent: Student | null = null;
 
  ShowDetails(studentToShow: Student) {
     this.selectedStudent = studentToShow
